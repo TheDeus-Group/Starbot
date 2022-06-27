@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  starbot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./src/config.js:/home/node/starbot/src/config.js:ro
